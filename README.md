@@ -43,17 +43,8 @@ This README file provides an overview of the COVID Vaccine Registration Project 
    - Assign roles to phlebotomists and track user history.
    - Generate reports by specifying date range and download them in PDF format.
 
-### Contribution:
-Contributions to this project are welcome. Please fork the repository, make changes, and submit a pull request.
-
 ### License:
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the LICENSE file for more details.
-
-### Support:
-For any issues or inquiries, please contact [project@email.com](mailto:project@email.com).
-
-### Acknowledgments:
-Special thanks to all contributors and developers involved in creating this project.
 
 ### Disclaimer:
 This project is for educational and demonstration purposes only. It does not provide medical advice or services related to COVID-19 vaccination.
