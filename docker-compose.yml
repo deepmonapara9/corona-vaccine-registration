@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: covidtmsdb
+      MYSQL_USER: yash
+      MYSQL_PASSWORD: "root"
+    ports:
+      - "3307:3306"
+
+  covid-vaccination:
+    build: .
+    ports:
+      - "80:80"  # Expose the port for your PHP application
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/html  # Mount current directory to /var/www/html in the container
+
+
+  phpmyadmin: 
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    ports:
+      - "8081:80"  # Access phpMyAdmin at http://localhost:8081
+    environment:
+      PMA_HOST: my-mysql
+      PMA_USER: yash
+      PMA_PASSWORD: root  # Ensure this matches MYSQL_PASSWORD
+
+ 
