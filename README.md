@@ -1,4 +1,4 @@
-**COVID Vaccine Registration Project Readme**
+**COVID Vaccine Registration**
 
 ### Introduction:
 This README file provides an overview of the COVID Vaccine Registration Project developed using PHP, MySQL, SCSS, CSS, HTML, and JavaScript. The project aims to facilitate the registration process for COVID-19 vaccination slots for users while providing necessary tools for administrators to manage the process efficiently.
